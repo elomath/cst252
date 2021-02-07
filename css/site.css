@@ -1,0 +1,49 @@
+
+#content{
+  background-color: gray;
+  border-style: solid;;
+}
+#header{
+  border-style: solid;
+}
+#body{
+  width:75%;
+  border-style: solid;
+}
+#picture{
+  width:50%;
+  transform: translateX(1500px),translateY(100px);
+}
+
+#footer{
+  background-color: gray;
+  border-style: solid;
+}
+
+
+h1{
+  color: white;
+  transform: translateX(30px);
+}
+
+h2{
+  color: white;
+  transform: translateX(45px)
+}
+
+p{
+  color: white;
+  transform: translateX(20px);
+  font-size:25px;
+}
+
+a{
+  color: yellow;
+  transform: translateX();
+}
+
+img{
+  width: 25%;
+  height: auto;
+  border-style: solid;
+}
