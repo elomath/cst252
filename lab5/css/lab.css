@@ -1,0 +1,29 @@
+#header {
+
+}
+
+#body{
+  transform: translateY(1000px);
+}
+
+#image{
+
+}
+
+h1{
+font-size: 80px;
+}
+
+h2{
+font-size: 60px;
+}
+
+p{
+font-size: 40px;
+}
+
+img{
+width: 25%;
+transform: translateX(1800px);
+position: relative;
+}
