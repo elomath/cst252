@@ -1,13 +1,17 @@
 #header {
-
+  border: 5px, black;
 }
 
 #body{
   transform: translateY(1000px);
+  border: 5px, black;
 }
 
 #image{
 
+}
+#js-output{
+  border: 5px, black;
 }
 
 h1{

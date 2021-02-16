@@ -15,8 +15,8 @@
  age = 2021 - year;
 
  // output
- document.writeIN("Make:" + make +"<br>"):
- document.writeIN("Model:" + model +"<br>"):
- document.writeIN("Color:" + color +"<br>"):
- document.writeIN("Year:" + year +"<br>"):
- document.writeIN("Age:" + age +"<br>"):
+ document.writeln("Make:" + make +"<br>");
+ document.writeln("Model:" + model +"<br>");
+ document.writeln("Color:" + color +"<br>");
+ document.writeln("Year:" + year +"<br>");
+ document.writeln("Age:" + age +"<br>");
