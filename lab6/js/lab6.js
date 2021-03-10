@@ -9,7 +9,7 @@ myTransport = ["Chevy Camero", "bike", "rides from friends", "walking"
   ];
 
 myMainRide = {
-  make = "Chevy",
+  make  = "Chevy",
   model = "Camero",
   color = "yellow",
   year = 2007,
