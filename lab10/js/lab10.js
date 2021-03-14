@@ -4,53 +4,25 @@
  * (c) Copyright by Blub Corp.
  **/
 
-var minXdelta = 25;
-var maxXdelta = 100;
-var minydelta = 25;
-var maxydelta = 100;
+ var button = document.getElementById('my-button');
+ button.addEventListener('click', function() {
+     inputValue = document.getElementById('user-name').value;
+     console.log("You input:", inputValue);
+ });
 
-var titleEl = document.getElementById("changeme");
-console.log("Here's a title:", titleEl);
+ function sortUserName() {
+   // split string to array
+   var nameArray = "user-name".split('');
+   console.log("nameArray =", nameArray);
+   //sort the array
+   var nameArraySort = nameArray.sort();
+   console.log("nameArraySort =", nameArraySort);
+   //join array back to a string
+   var nameSorted = nameArraySort.join('');
+   console.log("nameSorted =", nameSorted);
+   return nameSorted;
+}
 
-var buttonEl = document.getElementById("my-button");
-console.log("Here's a button:", buttonEl);
-
-var buttonEl = document.getElementById("better-button");
-console.log("Here's another button:", buttonEl);
-
-var inputEl = document.getElementById("my-input");
-console.log("Here's a input field:", inputEl);
-
-buttonEl.addEventListener("click", function(){
-  var name = inputEl.value;
-  //var name = prompt("What's your name?");
-  console.log("Title element:", titleEl);
-  titleEl.innerText = "Hello, " + name;
-  inputEl.value = "";
-})
-
-betterEl.addEventListener("click", function(){
-  alert("horray, you won!")
-})
-
-// add mouseover event for button
-betterEl.addEventListener("mouseover", function(){
-  console.log("Mouseover");
-// pick random distance for x and y
-  var xDelta = Math.floor(Math.random() * maxXdelta);
-  var yDelta = Math.floor(Math.random() * maxydelta);
-// pick random direction for x and y
-  var xDir = Math.floor((Math.random() * 3) -1);
-  var yDir = Math.floor((Math.random() * 3) -1);
-// create vector
-  var xDelta = xDelta * xDir;
-  var yDelta = yDelta * yDir;
-// get current position
-  var currentX = betterEl.offsetLeft;
-  var currenty = betterEl.offsetTop;
-// calculate new position
-  var newX = curX + xDelta;
-  var newY = curY + yDelta;
-// set new position
-  betterEl.stlye.left = newX + "pr"
-  betterEl.stlye.left = newX + "pr"
+// output
+document.writeln("Oh hey, I've fixed your name: ",
+ sortUserName(), "</br>");

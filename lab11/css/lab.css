@@ -29,5 +29,5 @@ font-size: 40px;
 img{
 width: 25%;
 transform: translateX(1800px);
-position: relative;
+position: absolute;
 }
