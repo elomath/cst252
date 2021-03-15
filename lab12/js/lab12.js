@@ -9,7 +9,11 @@
  // If the number is a multiple of 5, print “Buzz” instead of the number.
 
  // For numbers which are multiples of both 3 and 5, print “FizzBuzz”
-function fizzBuzzBoom(maxNums, factorObj) {
+
+ //given a number and an object that looks like this:
+ //     {3: "Fizz",5:"Buzz", 7: "Boom" }
+
+/*function fizzBuzzBoom(maxNums, factorObj) {
   // iterate over all of the numbers
   for (var num=0; num<maxNums; num++) {
       // reset ouput string
@@ -30,7 +34,7 @@ function fizzBuzzBoom(maxNums, factorObj) {
       }
     }
 
-for (i=1; i <= 200; i++) {
+for (i=1; i <= 100; i++) {
     if (i%35 == 0) {
        console.log("BoomFizz");
     } else if (i%21 == 0) {
@@ -48,7 +52,52 @@ for (i=1; i <= 200; i++) {
     }
 }
 
-outputStr += "Fizz";
+str += "Fizz";
 var newEl = document.createElement("p");
 newEl.innerHTML = str;
-document.getElementById("output").appendChild(newEl);
+document.getElementById("output").appendChild(newEl);*/
+
+
+//Version 2
+
+document.getElementById("button").addEventListener("click",function(){
+
+  var outputEl = document.getElementById("output");
+
+  var lastNum = document.getElementById("input").value;
+
+  if (lastNum == ""){
+    lastNum = 10;
+  }
+
+  var factor1 = 3;
+  var text1 = "Fizz";
+  var factor2 = 5;
+  var text1 = "Buzz";
+  var factor3 = 7;
+  var text1 = "Boom";
+  var lastNum = 200;
+  /*var lastNum = 200*/;
+
+  for (i=1; i<=lastNum; i++) {
+    str = '';
+    if (i % factor1 == 0){
+      str += "Fizz";
+    }
+    if (i % factor2 == 0){
+      str += "Buzz";
+    }
+    if (i % factor3 == 0){
+      str += "Boom";
+    }
+    if (str ==  ""){
+      str = i;
+    } else {
+      str +='!';
+    }
+    var newEl = document.createElement("p");
+    newEl.innerHTML = str;
+    outputEl.appendChild(newEl);
+  }
+
+});
