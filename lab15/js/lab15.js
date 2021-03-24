@@ -4,18 +4,35 @@
  * (c) Copyright by Blub Corp.
  **/
 
-function Vehicle(make, model, year, color, extras, name) {
+// This is the OLD class methoc
+/*
+function Vehicle(make, model, year, color, extras) {
   this.make = make;
   this.model = model;
   this.year = year;
   this.color = color;
   this.extras = extras;
-  this.name = name;
   this.info = function() {
+    return this.make + "  " + this.model+ "  " + this.year + "  " + this.color + " with " + this.extras;
+  }
+}
+*/
+
+// This is the NEW class method
+class Vehicle {
+  constructor (make, model, year, color, extras, name) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+    this.color = color;
+    this.extras = extras;
+    this.name = name;
+  }
+  info() {
       return this.make + "  " + this.model+ "  " + this.year + "  " +
       this.color + " with " + this.extras + " called " + this.name;
-    }
   }
+}
 
 var vehicles = [];
 
