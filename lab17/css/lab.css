@@ -1,0 +1,49 @@
+#header {
+  border: 5px, black;
+}
+
+#body{
+  transform: translateY(1000px);
+  border: 5px, black;
+}
+
+#image{
+
+}
+#js-output{
+  border: 5px, black;
+}
+
+h1{
+font-size: 80px;
+}
+
+h2{
+font-size: 60px;
+}
+
+p{
+font-size: 40px;
+}
+
+img{
+width: 25%;
+transform: translateX(1800px);
+position: relative;
+}
+
+#thing1-button {
+  background-color: red;
+}
+
+#thing1-button.fred {
+  background-color: cyan;
+}
+
+#thing2-button {
+  background-color: cyan;
+}
+
+#thing2-button.george {
+  background-color: red;
+}
