@@ -31,3 +31,8 @@ width: 25%;
 transform: translateX(1800px);
 position: relative;
 }
+
+.container-lg-12{
+  color: gold;
+  text-align: center;
+}

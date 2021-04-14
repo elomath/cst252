@@ -1,34 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lab 16: Libraries & Intro to jQuery</title>
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
-	<script
-	src="https://code.jquery.com/jquery-3.6.0.min.js"
-	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
-	<script src="js/lab16.js" defer></script>
+  <!-- Latest compiled and minified Bootstrap CSS -->
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+  </script>
+  <!-- Latest compiled Bootstrap JavaScript -->
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="js/myscript.js"></script>
+  <!-- Mobile-first: ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 	<body>
-		<div class="header">
-			<h1>Lab 16: Libraries & Intro to jQuery</h1>
+
+
+		<div class="container-lg-12" style="background-color: navy;">
+			<h1>Lab 18: Libraries and Frameworks 1</h1>
 		</div>
-		<div class="body">
-			<h2>Subject</h2>
-				<p>Working with your partner, experiment with jQuery</p>
-			<h2>Challenges</h2>
-				<p>I had some formatting issues with my jquery which resulted in the
-					button displaying but not applying the alert nor color.
-					I got some help from Nely Flores by cross referencing my code with
-					hers in order to fix my errors.</p>
-			<h2>Results</h2>
-				<p></p>
-			<div id="output">
-			</div>
-			<div class= "linkbox">
-				<a class= "homelink" href="/cst252/">&lt;&lt; Back Home</a>
-				<a class= "sourcelink" href="js/lab16.js" target = "source">Javascript Source &gt;&gt;</a>
+
+			<!-- A grey horizontal navbar that becomes vertical on small screens -->
+	<nav class="navbar navbar-expand-sm bg-light" style="background-color: gray;">
+
+	  <!-- Links -->
+	  <ul class="navbar-nav">
+	    <li class="nav-item">
+	      <a class="nav-link" href="https://elomath.github.io/cst252/lab15/index.html">Lab15</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="https://elomath.github.io/cst252/lab16/index.html">Lab16</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="https://elomath.github.io/cst252/lab17/index.html">Lab17</a>
+	    </li>
+	  </ul>
+
+	</nav>
+
+		<div class = container-fluid>
+			<div class="row">
+				<div class="col-xl-3" style="background-color:lavender;">.sidebar</div>
+ 				<div class="col-xl-6">.main
+				<h2>Subject</h2>
+					<p>Working with your partner, experiment with Bootstrap.</p>
+				<h2>Challenges</h2>
+					<p>Initially, I struggled to figure out how to place the body text
+						inside the contrainers but after tinkering with it, I got a pretty
+						nice result.</p>
+				<h2>Results</h2>
+					<p>As you can tell from the page, I made a basic header, body and
+						footer design with colored sidebars for looks and a navbar
+						below the header.</p>
+							<div id="output">
+						</div>
+					</div>
+				<div class="col-xl-3" style="background-color:lavender;">.sidebar</div>
 			</div>
 		</div>
+				<div class="container-lg-12" style="background-color: navy;">
+					<a class= "homelink" href="/cst252/">&lt;&lt; Back Home</a>
+					<a class= "sourcelink" href="indx.html" target = "source">HTML Code &gt;&gt;</a>
+				</div>
 	</body>
 </html>
