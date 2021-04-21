@@ -36,3 +36,6 @@ position: relative;
   color: gold;
   text-align: center;
 }
+.container-fluid{
+  min-height: vh 80;
+}
