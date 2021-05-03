@@ -32,11 +32,11 @@ function getComic(num) {
     var title = data.title;
     var alt = data.alt;
     var comicNum = data.num;
-    var html = <div id="imageblock">
+    var html = div id="imageblock">
         <h2>${title}</h2>
         <img src"${imageUrl}" title="${alt}""></br>
         <button id="prev">Previous</button><button id="next"></button>
-      </div>
+      </div>'
       console.log("My new html: \n", html);
       $("output").html(html);
 
